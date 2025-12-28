@@ -48,7 +48,7 @@ export default function RootLayout({
             <div className="phone-vr">
                 <div className="phone-vr-circle-fill"></div>
                 <div className="phone-vr-img-circle">
-                    <a href="tel:0836838379">
+                    <a href="tel:0845591568">
                         <i className="fa-solid fa-phone"></i>
                     </a>
                 </div>
@@ -58,7 +58,7 @@ export default function RootLayout({
             <div className="phone-vr">
                 <div className="zalo-vr-circle-fill"></div>
                 <div className="phone-vr-img-circle">
-                    <a href="https://zalo.me/0836838379" target="_blank">
+                    <a href="https://zalo.me/0845591568" target="_blank">
                         <img src="/assets/images/zalo_logo.jpg" className="zalo-logo" alt="Chat với chúng tôi qua Zalo"/>
                     </a>
                 </div>

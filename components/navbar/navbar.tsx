@@ -36,7 +36,7 @@ const Navbar = () => {
                     <div className={`${styles["icon-phone"]} mr-4`}><i className="fa-solid fa-phone"></i></div>
                     <div>
                         <div>Bạn cần giúp đỡ? Gọi ngay</div>
-                        <div><a href="tel:0836838379" target="_blank" className="phone" rel="noopener noreferrer">0845 591 568</a></div>
+                        <div><a href="tel:0845591568" target="_blank" className="phone" rel="noopener noreferrer">0845 591 568</a></div>
                     </div>
                 </div>
             </nav>

@@ -57,7 +57,7 @@ const Footer = () => {
                                 <div className="bar"></div>
                                 <h3>LIÊN HỆ TƯ VẤN</h3>
                             </div>
-                            <Link className="phone" href="tel:0836838379" target="_blank"
+                            <Link className="phone" href="tel:0845591568" target="_blank"
                                   rel="noopener noreferrer">0845 591 568</Link>
                             <div className="mb-4">
                                 <p className="mb-4">Trò chuyện cùng chuyên viên kĩ thuật chuyên nghiệp</p>

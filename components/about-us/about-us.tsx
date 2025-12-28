@@ -128,7 +128,7 @@ const AboutUs = () => {
                                         data-widget_type="image.default">
                                         <div className="image-3 elementor-widget-container">
                                             <img loading="lazy" decoding="async" width="800" height="750"
-                                                 src="/assets/images/service_2.jpg"
+                                                 src="/assets/images/image-2.jpg"
                                                  className="attachment-full size-full wp-image-5051" alt="service 3"
                                                  sizes="(max-width: 800px) 100vw, 800px"/></div>
                                     </div>
