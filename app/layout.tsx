@@ -14,7 +14,7 @@ const roboto = Roboto({
 })
 
 export const metadata: Metadata = {
-    title: "Sửa điện nước, máy bơm, bình nóng lạnh, hút bể phốt số 1 tại Hà Nội - 0836.838.379",
+    title: "Sửa điện nước, máy bơm, bình nóng lạnh, hút bể phốt số 1 tại Hà Nội - 0845.591.568",
     description: "Điện Nước Hà Nội 247 cung cấp dịch vụ sửa điện nước tại Hà Nội, bao gồm khắc phục sự cố điện, chập mạch, đoạn mạch điện, quá tải điện, sửa chữa thiết bị điện, sửa chữa đường nước, sửa chữa máy bơm, bình nóng lạnh, lắp đặt quạt trần và hút bể phốt. Cơ sở ở khắp các quận huyện: Long Biên, Hai Bà Trưng, Hoàn Kiếm, Đống Đa, Hoàng Mai, Ba Đình, Tây Hồ, Cầu Giấy, Bắc Từ Liêm, Nam Từ Liêm, Hà Đông, Thanh Xuân, Thanh Trì, Hoài Đức, Đông Anh, ... Tay nghề thợ với hơn 10 năm kinh nghiệm cam kết xử lý nhanh chóng các sự cố về điện, nước, tắc nghẽn đường ống và đảm bảo hệ thống hoạt động ổn định, an toàn. Chúng tôi cung cấp bảo hành lên tới 1 năm, cam kết chất lượng dịch vụ và sự hài lòng của khách hàng.",
     keywords: "điện nước, điện nước Hà Nội, sửa chữa điện nước, thợ điện, lắp đặt điện, chập mạch, sửa máy bơm, bình nóng lạnh, thông tắc cống, hút bể phốt, quạt trần",
     facebook: {
