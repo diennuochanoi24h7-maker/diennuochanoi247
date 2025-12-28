@@ -1,0 +1,408 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --e-global-color-primary: #222222;
+    --primaryColor: #ffca00;
+
+    --wdtFontSize_Base: 16px;
+    --wdtFontWeight_Base: 400;
+    --wdtLetterSpacing_3X: 3px;
+
+    --wdtFontWeight_Alt: 600;
+    --wdtLineHeight_Alt: 1.3;
+
+    --wdt-elementor-base-transition: all 0.3s linear 0s;
+    --wdtPadding_Btn: clamp(0.75rem, 0.6923rem + 0.2564vw, 1rem) /* Min-12 & Max-16 */ clamp(1.5rem, 1.3269rem + 0.7692vw, 2.25rem);
+    --wdtRadius_Part: 2.5em;
+}
+
+.header {
+    margin: 0 0 100px;
+    float: left;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+    z-index: 10;
+    background-image: linear-gradient(180deg, #222222 0%, #00000000 100%);
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.4px;
+    font-size: 16px;
+}
+
+a, area, button, input, label, select, summary, textarea, [tabindex] {
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+}
+
+a:hover {
+    color: var(--primaryColor);
+}
+
+a:-webkit-any-link:focus-visible {
+    outline: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: var(--wdtFontWeight_Alt);
+    letter-spacing: 0.3px;
+    line-height: var(--wdtLineHeight_Alt);
+    text-transform: none;
+}
+
+h1, h2 {
+    font-size: clamp(1.48rem, 1.1rem + 1.2821vw, 3.125rem);
+}
+
+.phone {
+    bottom: 76px;
+    right: 0;
+}
+
+.zalo {
+    bottom: 0;
+    right: 0;
+}
+
+.button-contact {
+    position: fixed;
+    z-index: 1000;
+}
+
+.button-contact .phone-vr {
+    position: relative;
+    visibility: visible;
+    background-color: transparent;
+    width: 90px;
+    height: 90px;
+    cursor: pointer;
+    z-index: 11;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+    transition: visibility .5s;
+    left: 0;
+    bottom: 10px;
+    display: block;
+}
+
+.phone-vr-circle-fill {
+    width: 60px;
+    height: 60px;
+    left: 5px;
+    position: absolute;
+    box-shadow: 0 0 0 0 #59d600;
+    background-color: rgba(83, 230, 8, 0.41);
+    border-radius: 50%;
+    border: 2px solid transparent;
+    -webkit-animation: phone-vr-circle-fill 2.3s infinite ease-in-out;
+    animation: phone-vr-circle-fill 2.3s infinite ease-in-out;
+    transition: all .5s;
+    -webkit-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-animuiion: zoom 1.3s infinite;
+    animation: zoom 1.3s infinite;
+}
+
+.zalo-vr-circle-fill {
+    width: 60px;
+    height: 60px;
+    left: 5px;
+    position: absolute;
+    box-shadow: 0 0 0 0 #2196f3;
+    background-color: rgba(33, 150, 243, .5);
+    border-radius: 50%;
+    border: 2px solid transparent;
+    -webkit-animation: phone-vr-circle-fill 2.3s infinite ease-in-out;
+    animation: phone-vr-circle-fill 2.3s infinite ease-in-out;
+    transition: all .5s;
+    -webkit-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-animuiion: zoom 1.3s infinite;
+    animation: zoom 1.3s infinite;
+}
+
+.zalo-logo {
+    object-fit: cover;
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.phone-vr-img-circle {
+    background-color: #59d600;
+    color: #ffffff;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    top: 5px;
+    left: 10px;
+    position: absolute;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    animation: shake 0.5s infinite ease-in-out;
+}
+
+@keyframes shake {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-30deg);
+    }
+    50% {
+        transform: rotate(30deg);
+    }
+    75% {
+        transform: rotate(-30deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@layer base {
+    :root {
+        --background: 0 0% 100%;
+        --foreground: 0 0% 3.9%;
+        --card: 0 0% 100%;
+        --card-foreground: 0 0% 3.9%;
+        --popover: 0 0% 100%;
+        --popover-foreground: 0 0% 3.9%;
+        --primary: 0 0% 9%;
+        --primary-foreground: 0 0% 98%;
+        --secondary: 0 0% 96.1%;
+        --secondary-foreground: 0 0% 9%;
+        --muted: 0 0% 96.1%;
+        --muted-foreground: 0 0% 45.1%;
+        --accent: 0 0% 96.1%;
+        --accent-foreground: 0 0% 9%;
+        --destructive: 0 84.2% 60.2%;
+        --destructive-foreground: 0 0% 98%;
+        --border: 0 0% 89.8%;
+        --input: 0 0% 89.8%;
+        --ring: 0 0% 3.9%;
+        --chart-1: 12 76% 61%;
+        --chart-2: 173 58% 39%;
+        --chart-3: 197 37% 24%;
+        --chart-4: 43 74% 66%;
+        --chart-5: 27 87% 67%;
+        --radius: 0.5rem;
+    }
+
+    .dark {
+        --background: 0 0% 3.9%;
+        --foreground: 0 0% 98%;
+        --card: 0 0% 3.9%;
+        --card-foreground: 0 0% 98%;
+        --popover: 0 0% 3.9%;
+        --popover-foreground: 0 0% 98%;
+        --primary: 0 0% 98%;
+        --primary-foreground: 0 0% 9%;
+        --secondary: 0 0% 14.9%;
+        --secondary-foreground: 0 0% 98%;
+        --muted: 0 0% 14.9%;
+        --muted-foreground: 0 0% 63.9%;
+        --accent: 0 0% 14.9%;
+        --accent-foreground: 0 0% 98%;
+        --destructive: 0 62.8% 30.6%;
+        --destructive-foreground: 0 0% 98%;
+        --border: 0 0% 14.9%;
+        --input: 0 0% 14.9%;
+        --ring: 0 0% 83.1%;
+        --chart-1: 220 70% 50%;
+        --chart-2: 160 60% 45%;
+        --chart-3: 30 80% 55%;
+        --chart-4: 280 65% 60%;
+        --chart-5: 340 75% 55%;
+    }
+}
+
+@layer base {
+    * {
+        @apply border-border;
+    }
+
+    body {
+        @apply bg-background text-foreground;
+    }
+}
+
+.elementor-container {
+    padding: 0 30px;
+    max-width: 1680px;
+    width: 100%;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
+
+.article {
+    width: 100%;
+    max-width: 1090px;
+    padding: 30px;
+    padding-top: 100px;
+    flex-flow: row wrap;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.article-line {
+    margin: 20px 0;
+    height: 6px;
+    background-color: #2481d1;
+}
+
+.article img {
+    border-radius: 40px;
+}
+
+.call-to-action-call {
+    margin: 20px 0;
+}
+
+.btn-call-now {
+    color: #ffffff;
+    width: 120px;
+    display: block;
+    padding: 12px 20px;
+    background-color: #222222;
+    border-radius: 12px;
+}
+
+.btn-call-now:hover {
+    background-color: #afafaf;
+    color: #ffffff;
+}
+
+.article-img-1 {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.article-img-1 img {
+    max-width: 70%;
+    min-width: 70%;
+}
+
+.article-introduce-company-services {
+    padding: 30px;
+    background-color: #2481d1;
+    border-radius: 40px;
+}
+
+.article-introduce-company-summary {
+    margin: 20px 0;
+}
+
+.article ul {
+    list-style-type: disc;
+    margin-left: 30px;
+}
+
+.article-title-1 {
+    margin: 80px 0 0;
+    color: red;
+}
+
+.article h3 {
+    margin: 25px 0 10px;
+    font-size: 20px;
+}
+
+.more-relative {
+    margin-top: 20px;
+}
+
+.article-attention {
+    margin: 20px 0;
+    padding: 30px;
+    background-color: #353535;
+    border-radius: 15px;
+    color: #ffffff;
+    display: flex;
+}
+
+.article-attention .underline-link {
+    color: #2481d1;
+}
+
+.article-link {
+    color: #303cfb;
+    text-decoration: underline;
+}
+
+.article-link:hover {
+    color: #ffffff;
+}
+
+.underline-link {
+    color: #303cfb;
+    text-decoration: underline;
+}
+
+.video-process {
+    height: 760px;
+}
+
+.slogan {
+    color: var(--primaryColor);
+}
+
+@media (max-width: 1279px) {
+    .video-process {
+        height: 315px;
+    }
+
+    .elementor-container {
+        padding: 0 20px;
+    }
+
+    .article-title-1 {
+        margin: 40px 0 0;
+    }
+
+    .article {
+        padding-top: 30px;
+    }
+
+    .article-img-1 img {
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    .slogan {
+        font-size: 11px;
+        display: inline-block;
+    }
+
+    .call-to-action-call {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .button-direction {
+        text-align: left;
+    }
+}

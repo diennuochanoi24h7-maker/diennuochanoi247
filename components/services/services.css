@@ -1,0 +1,134 @@
+.our-services {
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    padding: 120px 0px 50px 0px;
+    position: relative;
+    background-color: #f9f9f9;
+}
+
+.our-services .elementor-background-overlay {
+    background-color: #2481d1;
+    height: 46% !important;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.our-services .our-services-container {
+    color: #ffffff;
+    width: 100%;
+}
+
+.our-services-container > .intro {
+    display: flex;
+    position: relative;
+    padding-bottom: 60px;
+}
+
+.our-services-container h2, .our-services-container h5 {
+    color: #ffffff;
+}
+
+.description-service {
+    margin-left: 80px;
+}
+
+.swiper-slide .wdt-content-item {
+    display: flex;
+    flex-direction: column;
+    margin-right: 16px;
+    text-align: start;
+}
+
+.services {
+    padding-bottom: 70px;
+    padding-left: 80px;
+}
+
+.slide-image-item {
+    margin-bottom: 30px;
+    border-radius: 24px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slide-image-item .wdt-media-image-cover-container {
+    position: absolute;
+}
+
+.list-sub-service {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.list-sub-service li::marker {
+    color: #2481d1;
+}
+
+.item-service {
+    margin-bottom: 8px;
+}
+
+.services .wdt-content-title {
+    margin-bottom: 20px;
+    min-height: 42px;
+}
+
+.more-infor {
+    position: relative;
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #0011ff;
+}
+
+.our-services .button-price {
+    color: #ffffff;
+    background-color: var(--e-global-color-primary);
+}
+
+.services .button-direction {
+    background-color: var(--primaryColor);
+}
+
+@media (max-width: 1279px) {
+    .our-services {
+        padding: 50px 0px;
+    }
+
+    .our-services-container > .intro {
+        flex-direction: column;
+        padding-bottom: 30px;
+    }
+
+    .our-services .elementor-background-overlay {
+        height: 38% !important;
+    }
+
+    .our-services .wdt-button-holder .wdt-button {
+        width: 125px;
+    }
+
+    .intro-service {
+        padding-bottom: 20px;
+        max-width: 100%;
+    }
+
+    .description-service {
+        margin-left: 0;
+    }
+
+    .services {
+        padding: 0 30px 30px;
+        margin-left: 30px;
+    }
+
+    .more-infor {
+        text-align: center;
+    }
+}
+
+@media (max-width: 1023px) {
+    .our-services .elementor-background-overlay {
+        height: 50% !important;
+    }
+}

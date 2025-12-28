@@ -1,0 +1,26 @@
+.price {
+    width: 100%;
+    max-width: 1090px;
+    padding: 30px;
+    flex-flow: row wrap;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.line {
+    height: 10px;
+    background: #2481d1;
+}
+
+.article-title {
+    margin-bottom: 20px;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

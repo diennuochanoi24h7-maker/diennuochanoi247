@@ -1,0 +1,66 @@
+.contact-us {
+    padding: 145px 0px 50px 0px;
+    background-color: var(--primaryColor);
+}
+
+.contact-us-container {
+    max-width: 1680px;
+    width: 100%;
+    min-height: 700px;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    color: #434343;
+}
+
+.review-image {
+    width: 50%;
+}
+
+.customer-support {
+    margin-right: 50px;
+}
+
+.img-support-customer {
+    width: 100%;
+    border-radius: 30px;
+}
+
+.contact-intro {
+    max-width: 700px;
+}
+
+.contact-des {
+    margin-top: 12px;
+}
+
+.form-data {
+    margin-top: 30px;
+}
+
+.attention {
+    margin-bottom: 20px;
+}
+
+.label {
+    font-weight: 600;
+}
+
+.field-require {
+    color: red;
+}
+
+@media (max-width: 1279px) {
+    .contact-us {
+        padding: 50px 0;
+    }
+
+    .review-image {
+        display: none;
+    }
+
+    .intro-heading,.contact-des {
+        text-align: center;
+    }
+}

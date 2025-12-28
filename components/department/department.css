@@ -1,0 +1,41 @@
+.department-container {
+    padding: 80px 0
+}
+
+.department-container h3 {
+    font-size: 26px;
+}
+
+.department-content {
+    padding: 0 30px;
+    max-width: 1680px;
+    width: 100%;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
+
+.department-left {
+    width: 50%;
+    margin-right: 50px;
+}
+
+@media (max-width: 1279px) {
+    .department-container {
+        padding: 20px 0;
+        background-color: #f9f9f9;
+    }
+    .department-content {
+        display: block;
+    }
+
+    .department-left {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .department-right {
+        margin-top: 80px;
+    }
+}

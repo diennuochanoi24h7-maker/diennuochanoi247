@@ -1,0 +1,317 @@
+.about-us {
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    padding: 145px 0px 150px 0px;
+    background-image: url('/assets/images/body-bg-flip.png');
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about-us-container {
+    max-width: 1680px;
+    width: 100%;
+    min-height: 700px;
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    color: #434343;
+}
+
+.about-us-container h2, .about-us-container h5 {
+    color: var(--e-global-color-primary);
+}
+
+.about-us-container > .intro{
+    display: flex;
+    position: relative;
+}
+
+.description-intro {
+    margin-left: 80px;
+}
+
+
+.intro-left {
+    width: 50%;
+}
+
+.intro-service {
+    width: var(--container-widget-width, 630px);
+    max-width: 630px;
+    --container-widget-width: 630px;
+    --container-widget-flex-grow: 0;
+}
+
+.intro-right {
+    padding: 10px 0px 10px 30px;
+    border-style: solid;
+    border-width: 0px 0px 0px 1px;
+    border-color: #efefef;
+}
+
+.about-service {
+    display: flex;
+}
+
+.about-service-image {
+    padding-top: 30px;
+    padding-bottom: 40px;
+    width: 50%;
+    display: flex;
+}
+
+.about-service-image img {
+    border-radius: 20px;
+}
+
+.container-image-1 {
+    height: 100%;
+}
+
+.image-1 {
+    align-content: center;
+    align-items: center;
+    padding-right: 25px;
+}
+
+.image-1 img {
+    max-width: 370px;
+}
+
+.image-2-3 {
+    margin-left: 25px;
+}
+
+.image-2 {
+    width: 100%;
+    max-width: 360px;
+    margin: 0 30px 35px 0;
+}
+
+.image-3 {
+    width: 100%;
+    max-width: 375px;
+    margin-left: 20px;
+}
+
+.widget-project-info {
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    max-width: 100%;
+    top: 0;
+    right: -25%;
+    align-content: center;
+}
+
+.about-project-info {
+    background-color: var(--primaryColor);
+    padding: clamp(1.25rem, 1.1058rem + 0.641vw, 1.875rem);
+    border-radius: 20px;
+}
+
+.wdt-content-item {
+    text-align: center;
+}
+
+.wdt-content-item .wdt-content-counter {
+    font-size: clamp(2rem, 1.6538rem + 1.5385vw, 3.5rem);
+    line-height: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--e-global-color-primary);
+    font-weight: 800;
+    margin-bottom: 4px;
+}
+
+.about-project-info .wdt-content-item:first-child {
+    padding-bottom: 25px;
+    border-bottom: 1px solid var(--e-global-color-primary);
+}
+
+.wdt-icon-box-holder.wdt-rc-template-ico-content-aside .wdt-content-item {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    margin-right: -10px;
+    text-align: start;
+    justify-content: start;
+    justify-items: start;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 0;
+    position: relative;
+    z-index: 0;
+}
+
+.wdt-icon-box-holder.wdt-rc-template-ico-content-aside .wdt-content-item .wdt-content-media-group {
+    display: inline-flex;
+    margin: 10px !important;
+}
+
+.about-service-des {
+    width: 50%;
+    padding-left: 80px;
+}
+
+.about-service-des .wdt-content-item {
+    padding: 0;
+}
+
+.wdt-content-item .wdt-content-icon-wrapper .wdt-content-icon img {
+    width: 80px;
+    height: 80px;
+}
+
+.about-us .wdt-content-item .wdt-content-detail-group {
+    margin-left: 5% !important;
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex: 2 1 0;
+    overflow-wrap: anywhere;
+}
+
+.about-service-des .wdt-cus-about1-iconbox .wdt-content-item > * {
+    margin: 10px !important;
+}
+
+.about-service-des .wdt-content-detail-group .wdt-content-title h5 {
+    font-size: clamp(1.375rem, 1.3173rem + 0.2564vw, 1.625rem);
+    text-transform: capitalize;
+}
+
+.about-service-des .wdt-cus-about1-iconbox .wdt-content-title {
+    margin-bottom: 12px;
+}
+
+.about-service-des .wdt-column {
+    margin: 25px 0;
+}
+
+.about-service-des .icon-phone {
+    zoom: 2.4;
+    color: var(--primaryColor);
+}
+
+.about-service-des .phone-number {
+    min-width: 170px;
+}
+
+.about-service-des .wdt-button {
+    color: #ffffff;
+    background-color: var(--e-global-color-primary);
+}
+
+@media (max-width: 1279px) {
+    .about-us {
+        padding: 50px 0;
+    }
+
+    .image-1 {
+        padding: 0;
+    }
+
+    .image-2-3 {
+        margin-left: 8px;
+    }
+
+    .image-2 {
+        margin-bottom: 8px;
+    }
+
+    .image-3 {
+        margin-left: 8px;
+    }
+
+    .about-us-container > .intro {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .wdt-heading-title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .description-intro {
+        margin: 0;
+        padding-top: 20px;
+    }
+
+    .intro-service {
+        max-width: 100%;
+    }
+
+    .intro-left, .intro-service {
+        width: 100%;
+    }
+
+    .intro-right {
+        padding: 0;
+        border: none;
+    }
+
+    .about-service {
+        display: block;
+    }
+
+    .about-service-image {
+        width: 100%;
+    }
+
+    .widget-project-info {
+        position: relative;
+        right: 0;
+        margin-top: 8px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .about-service-des .icon-phone {
+        display: none;
+    }
+
+    .about-service-des .phone-number {
+        color: #2481d1;
+    }
+
+    .service-image-and-widget-info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .widget-project-info .wdt-content-item {
+        gap: 0;
+        padding-top: 0;
+    }
+
+    .about-project-info {
+        max-width: 370px;
+    }
+
+    .about-project-info .wdt-content-item:first-child {
+        padding-bottom: 16px;
+    }
+
+    .widget-project-info .wdt-content-media-group {
+        padding-top: 8px;
+    }
+
+    .about-service-des {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .container-image-1 {
+        height: auto;
+    }
+
+    .wdt-content-item-icon {
+        display: flex;
+        align-items: start;
+    }
+}
