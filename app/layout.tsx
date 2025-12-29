@@ -32,7 +32,7 @@ export default function RootLayout({
         <body
             className={`${roboto.className} antialiased relative`}
         >
-        <GoogleTagManager gtmId="GTM-T6W9FRFT"/>
+        <GoogleTagManager gtmId="GTM-N8GWLLC7"/>
         <script
             type="application/ld+json"
             dangerouslySetInnerHTML={{
